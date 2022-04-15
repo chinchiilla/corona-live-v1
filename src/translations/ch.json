@@ -1,0 +1,64 @@
+{
+    "feedback-tab": {
+        "feedback": "意见",
+        "feedback-input": "内容(必须)",
+        "email-input": "Email 邮箱 ",
+        "send": "发送",
+        "thank-you": "谢谢",
+        "go-back": "后一页",
+        "loading": "等候中",
+        "error": "错误"
+    },
+
+    "display-info": {
+        "title": "国内近况",
+        "confirmed-cases": "确诊病例",
+        "recovered": "治疗",
+        "suspected-case": "疑似病例",
+        "tested-negative": "阴性判定者",
+        "being-diagnosed": "检查中",
+        "source": "岀处/源头",
+        "source-value": "疾病管理部",
+        "death": "死亡",
+        "developer": "开发者",
+        "email": "Email 邮箱",
+        "coronamap": "Corona Map",
+        "live": "Live"
+    },
+
+    "others": {
+        "view": "看",
+        "search-address": "地址检索 (韩国语)",
+        "date": "日期",
+        "patient": "患者",
+        "cases": "案件",
+        "death": "死亡",
+
+        "recovered": "治疗",
+        "age": "年龄",
+        "contacts": "接触者"
+    },
+    "update": {
+        "description1": "韓國國內現況一次掌握",
+        "description2": "新聞速報和民眾舉報等等將會即時進行更新。",
+        "coronamap": "Corona Map",
+        "live": "Live",
+        "close": "关闭",
+        "today": "今天",
+        "yesterday": "昨天",
+        "second": "second",
+        "minute": "minute",
+        "hour": "hour",
+        "day": "day",
+        "month": "month",
+        "ago": "ago",
+        "news": "消息",
+        "update": "更新",
+        "official": "疾病管理本部",
+        "report": "意见",
+
+        "developer": "公告",
+        "ref": "出处",
+        "search-keyword": "关键词搜索"
+    }
+}

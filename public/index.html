@@ -1,21 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        <meta name="theme-color" content="#000000" />
+
+        <title>코로나 라이브</title>
+        <meta name="title" content="코로나 라이브" />
+        <meta name="description" content="실시간으로 코로나 관련 속보, 현황 볼수있는 사이트" />
+        <meta name="keywords" content="코로나, 코로나 라이브, 코로나바이러스, , corona, corona, corona live" />
+        <meta name="author" content="친칠라" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://corona-live.com/" />
+        <meta property="og:title" content="코로나 라이브" />
+        <meta property="og:description" content="실시간으로 코로나 관련 속보, 현황 볼수있는 사이트" />
+        <meta
+            property="og:image"
+            content="https://firebasestorage.googleapis.com/v0/b/corona-aaa3e.appspot.com/o/co-live.png?alt=media&token=1335ca52-082e-4b5a-9cbd-e9add688f3fb"
+        />
+        <div id="fb-root"></div>
+        <script
+            async
+            defer
+            crossorigin="anonymous"
+            src="https://connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v6.0"
+        ></script>
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary" />
+        <meta property="twitter:url" content="https://corona-live.com/" />
+        <meta property="twitter:title" content="코로나 라이브" />
+        <meta property="twitter:description" content="실시간으로 코로나 관련 속보, 현황 볼수있는 사이트" />
+        <meta
+            property="twitter:image"
+            content="https://firebasestorage.googleapis.com/v0/b/corona-aaa3e.appspot.com/o/co-live.png?alt=media&token=1335ca52-082e-4b5a-9cbd-e9add688f3fb"
+        />
+
+        <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+        <link rel="canonical" href="https://corona-live.com/" />
+        <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+
+        <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+
+        <meta name="naver-site-verification" content="2cf27dacb5dd020a060dba54c8e30d388fc0ed43" />
+        <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
+        <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+        <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-app.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-analytics.js"></script>
+
+        <script>
+            // Your web app's Firebase configuration
+            var firebaseConfig = {
+                apiKey: "AIzaSyAO8AJH-y8bULHIiBUoS41GcUJidZIn98Y",
+                authDomain: "corona-live.firebaseapp.com",
+                databaseURL: "https://corona-live.firebaseio.com",
+                projectId: "corona-live",
+                storageBucket: "corona-live.appspot.com",
+                messagingSenderId: "786747585008",
+                appId: "1:786747585008:web:1c351458733432bf97ed35",
+                measurementId: "G-E96JGVDVMN"
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+            firebase.analytics();
+        </script>
+        <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
       Only files inside the `public` folder can be referenced from the HTML.
@@ -23,13 +83,53 @@
       Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
+    --></head>
+    <body>
+        <noscript>You need to enable JavaScript to run this app.</noscript>
+        <div id="root"></div>
+        <script type="text/javascript">
+            //<![CDATA[
+            // // 사용할 앱의 JavaScript 키를 설정해 주세요.
+            // document.addEventListener(
+            //     "contextmenu",
+            //     function(e) {
+            //         e.preventDefault();
+            //     },
+            //     false
+            // );
+            Kakao.init("7f312728164dd5da6888c509df70f198");
+
+            function sendLink() {
+                Kakao.Link.sendDefault({
+                    objectType: "feed",
+                    content: {
+                        title: "코로나 라이브",
+                        description: "실시간 국내 코로나 현황, 실시간으로 속보와 제보를 볼수있는 사이트",
+                        imageUrl:
+                            "https://firebasestorage.googleapis.com/v0/b/corona-aaa3e.appspot.com/o/co-live-sq.png?alt=media&token=327d973c-b067-48bb-8be7-11e588c38d84",
+                        link: {
+                            mobileWebUrl: "https://corona-live.com/",
+                            webUrl: "https://corona-live.com/"
+                        }
+                    },
+                    // social: {
+                    //     likeCount: 34286,
+                    //     commentCount: 435,
+                    //     sharedCount: 8445
+                    // },
+                    buttons: [
+                        {
+                            title: "국내 현황 실시간으로 보기",
+                            link: {
+                                mobileWebUrl: "https://corona-live.com/",
+                                webUrl: "https://corona-live.com/"
+                            }
+                        }
+                    ]
+                });
+            }
+        </script>
+        <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
 
@@ -38,6 +138,5 @@
 
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+    --></body>
 </html>

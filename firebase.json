@@ -1,0 +1,7 @@
+{
+    "hosting": {
+        "site": "corona-live-app",
+        "public": "build",
+        "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
+    }
+}

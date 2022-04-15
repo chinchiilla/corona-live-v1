@@ -1,0 +1,64 @@
+{
+    "feedback-tab": {
+        "feedback": "제보",
+        "feedback-input": "내용, 링크 있으시면 첨부해주세요 (필수)",
+        "email-input": "이메일 (옵션)",
+        "send": "보내기",
+        "thank-you": "감사합니다",
+        "go-back": "뒤로 가기",
+        "loading": "로딩중",
+        "error": "필수사항 입력해주세요"
+    },
+
+    "display-info": {
+        "title": "국내 현황",
+
+        "confirmed-cases": "확진자",
+        "recovered": "완치",
+        "suspected-case": "의심환자",
+        "tested-negative": "음성판정",
+        "being-diagnosed": "검사중",
+        "source": "출처",
+        "source-value": "질병관리본부",
+        "developer": "개발자",
+        "death": "사망",
+
+        "email": "이메일",
+        "coronamap": "코로나맵 라이브",
+        "live": "라이브"
+    },
+
+    "others": {
+        "view": "보기",
+        "search-address": "장소 안전한지 보기",
+        "date": "날짜",
+        "patient": "확진자",
+        "cases": "확진자",
+        "recovered": "완치",
+        "death": "사망",
+        "age": "나이",
+        "contacts": "접촉자"
+    },
+    "update": {
+        "description1": "코로나 라이브 일시중단",
+        "description2": "코로나맵 라이브로 실시간 확진자 보시기 바랍니다",
+        "coronamap": "코로나",
+        "live": "live",
+        "close": "닫기",
+        "today": "오늘",
+        "yesterday": "어제",
+        "second": "초",
+        "minute": "분",
+        "hour": "시간",
+        "day": "일",
+        "month": "달",
+        "ago": "전",
+        "news": "속보",
+        "update": "업데이트",
+        "official": "질병관리본부",
+        "developer": "개발자",
+        "report": "제보",
+        "ref": "출처",
+        "search-keyword": "키워드 검색 (서울, 확진자, 등등)"
+    }
+}

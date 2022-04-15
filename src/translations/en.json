@@ -1,0 +1,64 @@
+{
+    "feedback-tab": {
+        "feedback": "Feedback",
+        "feedback-input": "Feedback (required)",
+        "email-input": "Email (optional)",
+        "send": "Send",
+        "thank-you": "Thank you",
+        "go-back": "Go back",
+        "loading": "loading",
+        "error": "Please fill out the required field"
+    },
+
+    "display-info": {
+        "title": "Corona Virus in Korea",
+        "confirmed-cases": "Confirmed Cases",
+        "recovered": "Recovered",
+        "suspected-case": "Suspected case",
+        "tested-negative": "Tested negative",
+        "being-diagnosed": "Being diagnosed",
+        "source": "Source",
+        "source-value": "Korea CDC",
+        "death": "death",
+
+        "developer": "Developer",
+        "email": "Email",
+        "coronamap": "Corona Map Live",
+        "live": ""
+    },
+
+    "others": {
+        "view": "view",
+        "search-address": "Search Address (Only in korean)",
+        "date": "date",
+        "patient": "patient",
+        "cases": "cases",
+        "recovered": "recovered",
+        "death": "death",
+        "age": "age",
+        "contacts": "contacts"
+    },
+    "update": {
+        "description1": "Corona Live is temporarily closed",
+        "description2": "Please check Corona Map Live instead, thank you",
+        "coronamap": "Corona Map",
+        "live": "live",
+        "close": "Close",
+        "today": "Today",
+        "yesterday": "Yesterday",
+        "second": "second",
+        "minute": "minute",
+        "hour": "hour",
+        "day": "day",
+        "month": "month",
+        "ago": "ago",
+        "news": "News",
+        "update": "Update",
+        "official": "Korea CDC",
+        "report": "Report",
+
+        "developer": "Developer",
+        "ref": "Source",
+        "search-keyword": "Search keywords (Seoul, confirmed case, etc) "
+    }
+}
